@@ -1,0 +1,92 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C8A2C8; /* Lilac background color */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;      /* Center the content vertically */
+    height: 100vh;            /* Full viewport height */
+    background-image: url('desktop.jpg'); /* Background image URL */
+    background-size:  50%;
+    background-position: top  ;
+    background-repeat: no-repeat;
+}
+
+
+.faq-section {
+    width: 400px;             /* Fixed width for square shape */
+    height: 400px;            /* Fixed height for square shape */
+    background-color: #fff;   /* White background for the FAQ section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow-y: auto;         /* Enable vertical scroll if content overflows */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgba(49, 10, 74, 0.841);
+    text-align: left;       /* Center the heading */
+}
+
+i {
+    color: #9c44d6db;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center; /* Align items vertically */
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+.faq-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #9c44d6db;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 15px;
+}
+
+.faq-answer p {
+    margin: 10px 0;
+}
